@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+# Create the complete HTML structure for the bleb app
+html_content = '''<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -29,11 +30,11 @@
 
         <!-- Main Content -->
         <main class="main-content">
-
+            
             <!-- Daily Check-in Tab -->
             <div id="checkin" class="tab-content active">
                 <h2>📸 Daily Check-in</h2>
-
+                
                 <div class="streak-counter">
                     <div class="streak-display">
                         <span class="streak-number" id="streak-count">0</span>
@@ -82,7 +83,7 @@
             <!-- Goals & Growth Tab -->
             <div id="goals" class="tab-content">
                 <h2>🎯 Goals & Growth</h2>
-
+                
                 <div class="goal-creation">
                     <h3>✨ Create New Goal</h3>
                     <div class="goal-form">
@@ -121,7 +122,7 @@
             <!-- Activities Hub Tab -->
             <div id="activities" class="tab-content">
                 <h2>🎲 Activities Hub</h2>
-
+                
                 <div class="activity-wheel-section">
                     <h3>🎡 Spin for an Activity!</h3>
                     <div class="wheel-container">
@@ -167,7 +168,7 @@
             <!-- Feedback Garden Tab -->
             <div id="feedback" class="tab-content">
                 <h2>💌 Feedback Garden</h2>
-
+                
                 <div class="feedback-types">
                     <button class="feedback-type-btn active" data-type="appreciation">💖 Appreciation</button>
                     <button class="feedback-type-btn" data-type="suggestion">💡 Suggestion</button>
@@ -201,7 +202,7 @@
             <!-- Memory Lane Tab -->
             <div id="memories" class="tab-content">
                 <h2>📚 Memory Lane</h2>
-
+                
                 <div class="memory-stats">
                     <div class="stat-card">
                         <span class="stat-number" id="total-memories">0</span>
@@ -250,7 +251,7 @@
             <!-- Communication Center Tab -->
             <div id="communication" class="tab-content">
                 <h2>💬 Communication Center</h2>
-
+                
                 <div class="time-zones">
                     <div class="timezone-card">
                         <h4>🌍 Your Time Zone</h4>
@@ -322,4 +323,11 @@
 
     <script src="app.js"></script>
 </body>
-</html>
+</html>'''
+
+# Save the HTML file
+with open('index.html', 'w', encoding='utf-8') as f:
+    f.write(html_content)
+
+print("✅ Complete HTML structure created with all features!")
+print("📁 File saved as: index.html")
